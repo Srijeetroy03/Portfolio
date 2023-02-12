@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    display: flex;
+}
+.logo{
+    height: 85px;
+    width: 85px;
+    margin-left: 21px;
+}
+.navright{
+    margin-left: 385px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 69px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+    display: flex;
+    
+}
+
+.my_info{
+    display: flex;
+    margin-top: 20px;
+}
+.info{
+    margin-left: 50px;
+    margin-top: 120px;
+    color: antiquewhite;
+    font-size: 70px;
+    width: 590px;
+    align-items: center;
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+.my_name{
+    color: deeppink;
+}
+.my_profile_pic{
+    margin-right: 30px;
+}
