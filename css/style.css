@@ -15,7 +15,7 @@ body{
     margin-left: 21px;
 }
 .navright{
-    margin-left: 385px;
+    margin-left: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,4 +71,20 @@ nav ul li a{
 }
 .my_profile_pic{
     margin-right: 30px;
+}
+.avatar_about{
+    margin-top: 200px;
+    display: flex;
+}
+#avatar_left{
+    margin-left: 20px;
+}
+.avatar_img{
+    height: 400px;
+    width: 350px
+}
+
+h5{
+    color: deeppink;
+    font-weight: 700;
 }
