@@ -78,13 +78,66 @@ nav ul li a{
 }
 #avatar_left{
     margin-left: 20px;
+    width: 800px;
 }
 .avatar_img{
     height: 400px;
     width: 350px
 }
 
+#about_right{
+    margin-right: 50px;
+}
 h5{
     color: deeppink;
     font-weight: 700;
+    font-size: 40px;
+    /* text-decoration: underline; */
+}
+.about{
+    color: antiquewhite;
+}
+
+.skill_color {
+    display: flex;
+}
+
+.me{
+    list-style: none;
+    margin-right: 100px;
+    cursor: pointer;
+    
+    /* font-size: 30px; */
+}
+.writings{
+    margin-bottom: 4px;
+}
+.skill_color{
+    color: antiquewhite;
+}
+
+.me::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    display:flex;
+    border-radius: 16px;
+    /* margin-left:0 ;
+    margin-bottom:-8px ; */
+    background: deeppink;
+    transition: 0.5s;
+}
+.me.active_link::after{
+    width: 50%;
+}
+.skill_contents{
+    color: antiquewhite;
+    width: 400px
+}
+.skill_contents ul li{
+    list-style: none;
+}
+span.skill{
+    color: deeppink;
+    font-style: italic;
 }
