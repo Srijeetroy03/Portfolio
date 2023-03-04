@@ -2,12 +2,18 @@
     margin:0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
+    color: antiquewhite;
 }
 body{
     background-color: black;
 }
 .navbar{
     display: flex;
+    top:0;
+    position: sticky;
+    /* backdrop-filter: blur(15px)!important; */
+    background-color: black;
+    z-index: 1;
 }
 .logo{
     height: 85px;
@@ -35,7 +41,20 @@ nav ul li a{
     display: flex;
     
 }
-
+li::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    display:flex;
+    border-radius: 16px;
+    /* margin-left:0 ;
+    margin-bottom:-8px ; */
+    background: deeppink;
+    transition: 0.5s;
+}
+li.active_link::after{
+    width: 100%;
+}
 .my_info{
     display: flex;
     margin-top: 20px;
@@ -128,11 +147,13 @@ h5{
     transition: 0.5s;
 }
 .me.active_link::after{
+    /* display: block; */
     width: 50%;
 }
-.skill_contents{
+.tab_contents{
     color: antiquewhite;
-    width: 400px
+    width: 400px;
+    display: none;
 }
 .skill_contents ul li{
     list-style: none;
@@ -140,4 +161,30 @@ h5{
 span.skill{
     color: deeppink;
     font-style: italic;
+}
+
+.active_tab{
+    display: block;
+}
+.footer{
+    /* padding:0 10px 0 10px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.find{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: deeppink;
+}
+.connect{
+    display: flex;
+    justify-content: center;
+}
+.vector{
+    display: flex;
+}
+.fa-brands.fa-github{
+    color: white;
 }
