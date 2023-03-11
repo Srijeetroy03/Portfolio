@@ -36,3 +36,22 @@ nav ul li a{
     display: flex;
     
 }
+li::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    display:flex;
+    border-radius: 16px;
+    /* margin-left:0 ;
+    margin-bottom:-8px ; */
+    background: deeppink;
+    transition: 0.5s;
+}
+li.active_link::after{
+    width: 100%;
+}
+.main_about{
+    margin-top: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+}

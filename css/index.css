@@ -183,8 +183,25 @@ span.skill{
     justify-content: center;
 }
 .vector{
-    display: flex;
+    /* display: flex;
+    justify-content: center;
+    margin-right: 20px; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 40px;
+    margin-top: 20px;
+    /* transition: background 0.5s, transform 0.5s; */
 }
 .fa-brands.fa-github{
-    color: white;
+    color: antiquewhite;
+    font-size: 30px;
+}
+.fa-brands.fa-linkedin{
+    color: antiquewhite;
+    font-size: 30px;
+}
+.fa-brands.fa-instagram{
+    color: antiquewhite;
+    font-size: 30px;
 }
