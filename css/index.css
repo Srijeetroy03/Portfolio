@@ -1,65 +1,76 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     color: antiquewhite;
 }
-body{
+
+body {
     background-color: black;
 }
-.navbar{
+
+.navbar {
     display: flex;
-    top:0;
+    top: 0;
     position: sticky;
     /* backdrop-filter: blur(15px)!important; */
     background-color: black;
     z-index: 1;
 }
-.logo{
+
+.logo {
     height: 85px;
     width: 85px;
     margin-left: 21px;
 }
-.navright{
+
+.navright {
     margin-left: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin-right: 69px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: antiquewhite;
     font-size: 20px;
     display: flex;
-    
+
 }
-li::after{
+
+li::after {
     content: '';
     width: 0;
     height: 5px;
-    display:flex;
+    display: flex;
     border-radius: 16px;
     /* margin-left:0 ;
     margin-bottom:-8px ; */
     background: deeppink;
     transition: 0.5s;
 }
-li.active_link::after{
+
+li.active_link::after {
     width: 100%;
 }
-.my_info{
+
+.my_info {
     display: flex;
     margin-top: 20px;
 }
-.info{
+
+.info {
     margin-left: 50px;
     margin-top: 120px;
     color: antiquewhite;
@@ -67,53 +78,90 @@ li.active_link::after{
     width: 590px;
     align-items: center;
 }
+
 .wave {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
     display: inline-block;
-  }
-  
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-    100% { transform: rotate( 0.0deg) }
-  }
-.my_name{
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.my_name {
     color: deeppink;
 }
-.my_profile_pic{
+
+.my_profile_pic {
     margin-right: 30px;
 }
-.avatar_about{
+
+.avatar_about {
     margin-top: 200px;
     display: flex;
 }
-#avatar_left{
+
+#avatar_left {
     margin-left: 20px;
     width: 800px;
 }
-.avatar_img{
+
+.avatar_img {
     height: 400px;
     width: 350px
 }
 
-#about_right{
+#about_right {
     margin-right: 50px;
 }
-h5{
+
+h5 {
     color: deeppink;
     font-weight: 700;
     font-size: 40px;
     /* text-decoration: underline; */
 }
-.about{
+
+.about {
     color: antiquewhite;
 }
 
@@ -121,68 +169,77 @@ h5{
     display: flex;
 }
 
-.me{
+.me {
     list-style: none;
     margin-right: 100px;
     cursor: pointer;
-    
+
     /* font-size: 30px; */
 }
-.writings{
+
+.writings {
     margin-bottom: 4px;
 }
-.skill_color{
+
+.skill_color {
     color: antiquewhite;
 }
 
-.me::after{
+.me::after {
     content: '';
     width: 0;
     height: 3px;
-    display:flex;
+    display: flex;
     border-radius: 16px;
     /* margin-left:0 ;
     margin-bottom:-8px ; */
     background: deeppink;
     transition: 0.5s;
 }
-.me.active_link::after{
+
+.me.active_link::after {
     /* display: block; */
     width: 50%;
 }
-.tab_contents{
+
+.tab_contents {
     color: antiquewhite;
     width: 400px;
     display: none;
 }
-.skill_contents ul li{
+
+.skill_contents ul li {
     list-style: none;
 }
-span.skill{
+
+span.skill {
     color: deeppink;
     font-style: italic;
 }
 
-.active_tab{
+.active_tab {
     display: block;
 }
-.footer{
+
+.footer {
     /* padding:0 10px 0 10px; */
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.find{
+.find {
     display: flex;
     justify-content: center;
     font-size: 30px;
     color: deeppink;
 }
-.connect{
+
+.connect {
     display: flex;
     justify-content: center;
 }
-.vector{
+
+.vector {
     /* display: flex;
     justify-content: center;
     margin-right: 20px; */
@@ -193,15 +250,18 @@ span.skill{
     margin-top: 20px;
     /* transition: background 0.5s, transform 0.5s; */
 }
-.fa-brands.fa-github{
+
+.fa-brands.fa-github {
     color: antiquewhite;
     font-size: 30px;
 }
-.fa-brands.fa-linkedin{
+
+.fa-brands.fa-linkedin {
     color: antiquewhite;
     font-size: 30px;
 }
-.fa-brands.fa-instagram{
+
+.fa-brands.fa-instagram {
     color: antiquewhite;
     font-size: 30px;
 }

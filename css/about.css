@@ -54,4 +54,22 @@ li.active_link::after{
     margin-top: 130px;
     margin-left: 50px;
     margin-right: 50px;
+    height: 502px;
+    display: flex;
+    align-items: center;
 }
+.left-img{
+    height: 465px;
+}
+/* .right-intro{
+     display: grid;
+    grid-template-rows: 60px 100px; 
+    align-items: center;
+    /* display: contents; */
+/* } */
+.right-intro{
+    display: flex;
+    align-items: center;
+    height: 465px;
+}
+
