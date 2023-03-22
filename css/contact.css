@@ -11,8 +11,7 @@
 
 }
 .contact_left{
-    width: 650px;
-
+    width: 40%;
 }
 .contact .contact_details{
     display: flex;
@@ -33,3 +32,55 @@ span{
     /* margin-top: 20px; */
     /* transition: background 0.5s, transform 0.5s; */
 }
+i:hover{
+    color: deeppink;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.contact_right{
+    width: 60%;
+}
+
+.text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 50px;
+    background-color: rgb(50, 46, 46);
+    font-size: 15px;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.text::placeholder{
+    color: deeppink;
+}
+.text-area{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(50, 46, 46);
+    padding: 3px;
+    font-size: 15px;
+    border: none;
+    max-width: 600px;
+    max-height: 190px;
+}
+.text-area::placeholder{
+    color: deeppink;
+
+}
+
+#submit{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: deeppink;
+    border: none;
+    border-radius: 10px;
+
+}
+
