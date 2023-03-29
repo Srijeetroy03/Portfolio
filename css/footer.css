@@ -1,0 +1,23 @@
+
+footer{
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: deeppink; */
+
+}
+.hr{
+    /* color: deeppink; */
+    width: 60%;
+    border-top: 1px solid deeppink;
+    border-bottom: 1px solid deeppink;
+    /* border-width: 60%; */
+    
+}
