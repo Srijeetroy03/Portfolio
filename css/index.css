@@ -265,3 +265,18 @@ span.skill {
     color: antiquewhite;
     font-size: 30px;
 }
+
+
+/* responsiveness */
+@media only screen and (max-width: 200px){
+    .footer{
+        /* margin-left: 155px; */
+        /* width: 307px; */
+        position: relative;
+        /* margin-right: 100px; */
+        left: 169px;
+        /* right: -50px; */
+        width: 300px;
+        /* margin: 0;*/
+    }
+}

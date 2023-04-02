@@ -21,3 +21,12 @@ footer{
     /* border-width: 60%; */
     
 }
+
+/* responsiveness */
+@media only screen and (max-width: 200px){
+    .divider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

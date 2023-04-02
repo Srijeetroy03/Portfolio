@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="contact_right">
-            <form action="">
+            <form action="" name="submit-to-google-sheet">
                 <!-- <label for="">Name:</label> -->
                 <input type="text" name="Name" placeholder="  Your name" id="" class="text"required>  <br>
                 <!-- <label for="">Email-address</label> -->
@@ -52,7 +52,7 @@
                 <!-- <label for="">Contact no.:</label> -->
                 <input type="text" name="Contact" id="" class="text" placeholder="  Your contact no."><br>
                 <!-- <label for="">Your message:</label> -->
-                <textarea name="" id="" cols="80" rows="10" class="text-area" placeholder="  Give your message"></textarea><br>
+                <textarea name="" id="" cols="80" rows="10" class="text-area" name="Message" placeholder="  Give your message"></textarea><br>
                 <div class="btn"><button type="submit" id="submit">Submit</button></div><br><br>
             </form>
         </div>
@@ -64,5 +64,16 @@
         Copyright © Srijeet
     </footer>
     <script src="js/contact.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyFHj4YkjccdXZhZV_iFHA2EGEMy3hP0Dnaw06ljfvhH0bgyZOlcXhkIFqNkrsj3CVqww/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
