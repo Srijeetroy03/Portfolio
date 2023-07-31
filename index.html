@@ -38,7 +38,12 @@
     </div>
     <div class="my_info">
         <div class="info">
-            Hi Everyone! <span class="wave">👋</span> <br>I'm <span class="my_name">SRIJEET ROY</span>
+            <p>
+                Hi Everyone! <span class="wave">👋</span> <br>I'm <span class="my_name">SRIJEET ROY</span><br>
+                I am a passionate <br>
+                <span id="element"></span>
+            </p>
+
         </div>
         <div class="my_profile_pic"><img class="profile" src="Images/main_image.jpg" alt="" srcset=""></div>
     </div>
@@ -98,12 +103,20 @@
     <div class="divider">
         <hr class="hr">
     </div>
-    
+
     <footer>
-        
+
         Copyright © Srijeet
     </footer>
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['FRONT END WEB DEVELOPER', 'CODER'],
+          typeSpeed: 50,
+        });
+    </script>
+
 
 
 </body>
