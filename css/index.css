@@ -144,7 +144,7 @@ li.active_link::after {
 }
 
 .avatar_about {
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
 }
 
@@ -160,6 +160,7 @@ li.active_link::after {
 
 #about_right {
     margin-right: 50px;
+    margin-top: 70px;
 }
 
 h5 {
@@ -220,7 +221,7 @@ h5 {
     list-style: none;
 }
 
-span.skill {
+span{
     color: deeppink;
     font-style: italic;
 }
@@ -231,7 +232,7 @@ span.skill {
 
 .footer {
     /* padding:0 10px 0 10px; */
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 40px;
 }
 
