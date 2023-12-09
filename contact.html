@@ -65,15 +65,14 @@
     </footer>
     <script src="js/contact.js"></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwS2Wvc_aEaBphBylDbsZM_ltu8KXk7nEMyoZSdy4seYAwXupRLi9O0oa6wocL3-HoeHA/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw_uOijA_DxhfOnCx4uLT8fEciP4pccRTNAl-17Xnz76NisxYEaOE8I5eu_dWh1upCS/exec'
         const form = document.forms['submit-to-google-sheet']
       
         form.addEventListener('submit', e => {
-          e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
-    </script>
+      </script>
 </body>
 </html>
