@@ -1,6 +1,8 @@
 let tablinks=document.getElementsByClassName("me");
 let tabcontents=document.getElementsByClassName("tab_contents");
 let navlinks=document.getElementsByClassName('nav')
+
+
 // function opennav(tabname){
 //     for(let navlink of navlinks){
 //         navlink.classList.remove("active_link")
