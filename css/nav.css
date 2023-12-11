@@ -7,8 +7,13 @@
 body{
     background-color: black;
 }
-.navbar{
+.navbar {
     display: flex;
+    top: 0;
+    position: sticky;
+    /* backdrop-filter: blur(15px)!important; */
+    background-color: black;
+    z-index: 1;
 }
 .logo{
     height: 85px;
@@ -36,7 +41,7 @@ nav ul li a{
     display: flex;
     
 }
-li::after{
+.nav::after{
     content: '';
     width: 0;
     height: 5px;
@@ -47,6 +52,6 @@ li::after{
     background: deeppink;
     transition: 0.5s;
 }
-li.active_link::after{
+.active_link::after{
     width: 100%;
 }

@@ -7,16 +7,17 @@
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
-.navbar {
+/* .navbar {
     display: flex;
     top: 0;
     position: sticky;
     /* backdrop-filter: blur(15px)!important; */
-    background-color: black;
+    /* background-color: black;
     z-index: 1;
-}
+} */ 
 
 .logo {
     height: 85px;
@@ -213,6 +214,10 @@ span{
     /* transition: background 0.5s, transform 0.5s; */
 }
 
+.fa-brands.fa-github:hover,.fa-brands.fa-linkedin:hover,.fa-brands.fa-instagram:hover{
+    transition: 0.5s ease-in-out;
+    color: deeppink;
+}
 .fa-brands.fa-github {
     color: antiquewhite;
     font-size: 30px;

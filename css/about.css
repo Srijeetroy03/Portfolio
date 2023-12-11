@@ -12,12 +12,7 @@
 .left-img{
     height: 465px;
 }
-/* .right-intro{
-     display: grid;
-    grid-template-rows: 60px 100px; 
-    align-items: center;
-    /* display: contents; */
-/* } */
+
 .right-intro{
     display: flex;
     align-items: center;
@@ -33,23 +28,39 @@
     
 }
 .p_skill{
-    display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 200px 200px 200px;
-    row-gap: 50px;
-    column-gap: 50px;
-    justify-content: center;
     color: antiquewhite;
-    /* align-items: center; */
+} 
+
+#p_skill_1{
+    display: grid;
+    grid-template-columns: 200px 200px 200px ;
+    grid-template-rows: 200px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 20px;
+
+}
+
+#p_skill_2{
+    display: grid;
+    grid-template-columns: 200px 200px ;
+    grid-template-rows: 200px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 20px;
 }
 .skill{
     border: 2px solid deeppink;
+    height: 150px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 70px;
     transition: 0.5s ;
+
 }
 .skill:hover{
     /* cursor: pointer; */
