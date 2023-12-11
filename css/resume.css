@@ -36,3 +36,21 @@
 #cv_content p span{
     color: deeppink;
 }
+
+#cv_button{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 150px;
+    border: none;
+    color: deeppink;
+    border-radius: 15px;
+    position: relative;
+    bottom: 124px;
+    left: 342px;
+    cursor: pointer;
+}
+#cv_button:hover{
+    background-color: deeppink;
+    color: antiquewhite;
+    transition: 0.3s ease-in-out;
+}

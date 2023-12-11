@@ -1,6 +1,6 @@
 
 .main_about{
-    margin-top: 100px;
+    margin-top: 16px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 15px;
@@ -16,8 +16,12 @@
 .right-intro{
     display: flex;
     align-items: center;
-    height: 465px;
+    height: 440px;
     margin-left: 37px;
+}
+.introduction h1{
+    color: deeppink;
+    font-weight: 500;
 }
 .about_skill h1{
     color: antiquewhite;

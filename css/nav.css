@@ -26,6 +26,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.navright li{
+    list-style: none;
+}
 nav ul{
     display: flex;
     justify-content: center;
@@ -56,3 +59,14 @@ li::after {
 li.active_link::after {
     width: 100%; 
 } 
+
+.source_code_img{
+    height: 35px;
+    width: 50px;
+}
+
+.source_code_img:hover{
+    height: 45px;
+    width: 60px;
+    transition: 0.3s ease-in-out;
+}
