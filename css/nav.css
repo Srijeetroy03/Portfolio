@@ -21,7 +21,7 @@ body{
     margin-left: 21px;
 }
 .navright{
-    margin-left: 370px;
+    margin-left: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,17 +41,18 @@ nav ul li a{
     display: flex;
     
 }
-.nav::after{
+li::after {
     content: '';
     width: 0;
     height: 5px;
-    display:flex;
+    display: flex;
     border-radius: 16px;
     /* margin-left:0 ;
     margin-bottom:-8px ; */
     background: deeppink;
     transition: 0.5s;
 }
-.active_link::after{
-    width: 100%;
-}
+
+li.active_link::after {
+    width: 100%; 
+} 

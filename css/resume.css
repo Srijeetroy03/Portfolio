@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main_body_resume{
+    display: flex;
+    height: 410px;
+    column-gap: 170px;
+}
+#resume_pic_contain{
+    margin-left: 40px;
+}
+#image_resume{
+    height: 400px;
+    width: 400px;
+}
+#cv_content{
+    margin-top: 30px;
+}
+#cv_content h1{
+    color: deeppink;
+    font-size: 40px;
+    font-weight: 500;
+}
+#cv_content p{
+
+    color: antiquewhite;
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 20px;
+}
+#cv_content p span{
+    color: deeppink;
+}
